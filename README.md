@@ -1,9 +1,9 @@
-#DutchyTPA
+# DutchyTPA
 Minecraft 1.16
 
 This is a very, very simple TPA plugin.
 
-##Commands
+## Commands
 - /tpa <playername>: Teleport to a player
 - /tpaccept: Accept a TPA request
 - /tpdeny: Denyt a TPA request
