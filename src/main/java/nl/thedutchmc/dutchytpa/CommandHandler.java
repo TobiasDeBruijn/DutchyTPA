@@ -26,14 +26,29 @@ public class CommandHandler implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		
+		if(!(sender instanceof Player)) {
+			sender.sendMessage(ChatColor.RED + "Only players may use this command!");
+			return true;
+		}
+		
 		// TPA command
 		if(command.getName().equals("tpa")) {
 			
 			// tpa <playername>
 			if(args.length == 1) {
 				
+				if(!Bukkit.getOnlinePlayers().contains(Bukkit.getPlayer(args[0]))) {
+					sender.sendMessage(ChatColor.RED + "Player is not online!");
+					return true;
+				}
+				
 				Player target = Bukkit.getPlayer(args[0]);
 				Player senderP = (Player) sender;
+				
+				if(target.getUniqueId().equals(senderP.getUniqueId())) {
+					sender.sendMessage(ChatColor.RED + "You may not teleport to yourself!");
+					return true;
+				}
 				
 				if(targetMap.containsKey(senderP.getUniqueId())) {
 					sender.sendMessage(ChatColor.GOLD + "You already have a pending request!");
