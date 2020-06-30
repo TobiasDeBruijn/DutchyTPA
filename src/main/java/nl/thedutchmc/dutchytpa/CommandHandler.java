@@ -83,7 +83,7 @@ public class CommandHandler implements CommandExecutor {
 			
 			
 		// tpaccept command
-		} else if(command.getName().equals("tpaccept")) {
+		} else if(command.getName().equals("tpaccept") || command.getName().equals("tpyes")) {
 			
 			Player senderP = (Player) sender;
 			
@@ -112,7 +112,7 @@ public class CommandHandler implements CommandExecutor {
 			
 			
 		// tpdeny command
-		} else if(command.getName().equals("tpdeny")) {
+		} else if(command.getName().equals("tpdeny") || command.getName().equals("tpno")) {
 			
 			Player senderP = (Player) sender;
 

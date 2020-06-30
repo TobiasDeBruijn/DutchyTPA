@@ -1,6 +1,6 @@
 name: DutchyTPA
 main: nl.thedutchmc.dutchytpa.Tpa
-version: 1.0.1
+version: 1.0.2
 api-version: 1.16
 author: TheDutchMC
 description: A simple TPA plugin
@@ -11,3 +11,7 @@ commands:
   description: Accept a TPA request
  tpdeny:
   description: Deny a TPA request
+ tpyes:
+  description: Alias for /tpaccept
+ tpno:
+  description: Alias for /tpdeny

@@ -1,9 +1,8 @@
 plugins {
     id 'java'
-    id 'com.github.johnrengelman.shadow' version '5.0.0'
 }
 
-version = '1.16_1.0.1'
+version = '1.16_1.0.2'
 
 repositories {
     jcenter()
@@ -18,8 +17,6 @@ repositories {
 	}
 }
 
-dependencies {
-    compile("net.dv8tion:JDA:4.0.0_39")
-    
+dependencies {    
     compileOnly 'org.spigotmc:spigot-api:1.16.1-R0.1-SNAPSHOT'
 }
