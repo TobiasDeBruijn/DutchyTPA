@@ -1,8 +1,9 @@
 plugins {
     id 'java'
+    id 'maven-publish'
 }
 
-version = '1.16_1.0.2'
+version = '1.16_1.1.0'
 
 repositories {
     jcenter()
@@ -19,4 +20,16 @@ repositories {
 
 dependencies {    
     compileOnly 'org.spigotmc:spigot-api:1.16.1-R0.1-SNAPSHOT'
+}
+
+publishing {
+	publications {
+		maven(MavenPublication) {
+			groupId 'nl.thedutchmc'
+			artifactId 'dutchytpa'
+			version '1.1.0'
+			
+			from components.java
+		}
+	}
 }

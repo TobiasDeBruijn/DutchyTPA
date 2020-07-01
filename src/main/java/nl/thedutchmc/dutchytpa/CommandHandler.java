@@ -96,6 +96,10 @@ public class CommandHandler implements CommandExecutor {
 					if(entry.getValue().equals(senderP.getUniqueId())) {
 						
 						Player tpRequester = Bukkit.getPlayer(entry.getKey());
+						
+						SuccessfulTpaEvent event = new SuccessfulTpaEvent(tpRequester, tpRequester.getLocation());
+						Bukkit.getPluginManager().callEvent(event);
+						
 						tpRequester.teleport(senderP);
 						targetMap.remove(entry.getKey());
 						
