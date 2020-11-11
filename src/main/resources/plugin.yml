@@ -1,6 +1,6 @@
 name: DutchyTPA
 main: nl.thedutchmc.dutchytpa.Tpa
-version: 1.1.0
+version: 1.1.2
 api-version: 1.16
 author: TheDutchMC
 description: A simple TPA plugin
