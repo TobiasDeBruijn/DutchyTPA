@@ -1,5 +1,5 @@
 # DutchyTPA
-Minecraft 1.16
+Minecraft 1.16, 1.17
 
 This is a very, very simple TPA plugin.
 
