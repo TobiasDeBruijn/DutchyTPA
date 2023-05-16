@@ -9,3 +9,9 @@ This is a very, very simple TPA plugin.
 - ``/tpdeny``, ``/tpno``: Deny a TPA request
 
 Told you, it's simple :)
+
+## License
+This project is licensed under
+- [MIT](LICENSE-MIT)
+- [Apache 2.0](LICENSE-APACHE)
+At your option
