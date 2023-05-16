@@ -1,5 +1,10 @@
 # DutchyTPA
-Minecraft 1.16, 1.17
+Minecraft:
+- 1.16
+- 1.17
+- 1.18
+- 1.19
+- Unless something happens, everything afterwards too
 
 This is a very, very simple TPA plugin.
 
@@ -14,4 +19,5 @@ Told you, it's simple :)
 This project is licensed under
 - [MIT](LICENSE-MIT)
 - [Apache 2.0](LICENSE-APACHE)
+
 At your option
