@@ -1,4 +1,4 @@
-package nl.thedutchmc.dutchytpa;
+package dev.array21.dutchytpa;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;

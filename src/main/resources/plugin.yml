@@ -1,8 +1,8 @@
 name: DutchyTPA
-main: nl.thedutchmc.dutchytpa.Tpa
-version: 1.1.3
+main: dev.array21.dutchytpa.Tpa
+version: 1.2.0
 api-version: 1.16
-author: TheDutchMC
+author: TobiasDeBruijn
 description: A simple TPA plugin
 commands:
  tpa:
@@ -15,3 +15,13 @@ commands:
   description: Alias for /tpaccept
  tpno:
   description: Alias for /tpdeny
+permissions:
+ tpa.deny:
+  description: "Allows the use of the /tpdeny command"
+  default: true
+ tpa.accept:
+  description: "Allows the use of the /tpaccept command"
+  default: true
+ tpa.tpa:
+  description: "Allows the use of the /tpa command"
+  default: true
